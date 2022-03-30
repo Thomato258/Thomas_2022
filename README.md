@@ -1,2 +1,2 @@
 # Thomas_2022
-doody
+this is the read me file
