@@ -31,16 +31,13 @@ h5 {
 
 .header-image{
     position: relative;
-    text-align: center;
 }
 
 .header-image h1{
     color: white;
     position: absolute;
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    top: 28%;
+    width: 100%;
     text-align: center;
     font-family: 'Great Vibes', cursive;
     font-size: 800%;
@@ -54,8 +51,6 @@ h5 {
     margin-left: auto;
     margin-right: auto;
 }
-
-/* -------------------- HEADER */
 
 /* -------------------- NAVIGATION */
 /* navigation bar colour */
@@ -85,6 +80,133 @@ h5 {
     color: rgb(32, 32, 32);
   }
 
+/* gallery */
+
+  .first {
+    color: gray;
+  }
+  .first:hover {
+    color: rgb(32, 32, 32);
+  }
+
+
+  .second {
+    color: gray;
+  }
+  .second:hover {
+    color: rgb(32, 32, 32);
+  }
+
+
+  .third {
+    color: gray;
+  }
+  .third:hover {
+    color: rgb(32, 32, 32);
+  }
+
+  
+  
+  @media screen and (min-width: 600px) {
+    
+    .pictures1 {
+      display: grid;
+      grid-template-columns:  auto auto auto;
+      max-width:1000px;
+      margin-left: auto;
+      margin-right: auto;
+      grid-gap: 50px;
+    }
+}
+
+
+
+     .fourth {
+        color: gray;
+      }
+      .fourth:hover {
+        color: rgb(32, 32, 32);
+      }
+    
+    
+      .fifth {
+        color: gray;
+      }
+      .fifth:hover {
+        color: rgb(32, 32, 32);
+      }
+    
+    
+      .sixth {
+        color: gray;
+      }
+      .sixth:hover {
+        color: rgb(32, 32, 32);
+      }
+    
+      
+      
+      @media screen and (min-width: 600px) {
+        
+        .pictures2 {
+          display: grid;
+          grid-template-columns:  auto auto auto;
+          max-width:1000px;
+          margin-left: auto;
+          margin-right: auto;
+          grid-gap: 50px;
+        }    
+    }
+
+
+
+
+
+
+
+    .seventh {
+        color: gray;
+      }
+      .seventh:hover {
+        color: rgb(32, 32, 32);
+      }
+    
+    
+      .eighth {
+        color: gray;
+      }
+      .eighth:hover {
+        color: rgb(32, 32, 32);
+      }
+    
+    
+      .nineth {
+        color: gray;
+      }
+      .nineth:hover {
+        color: rgb(32, 32, 32);
+      }
+    
+      
+      
+      @media screen and (min-width: 600px) {
+        
+        .pictures3 {
+          display: grid;
+          grid-template-columns:  auto auto auto;
+          max-width:1000px;
+          margin-left: auto;
+          margin-right: auto;
+          grid-gap: 50px;
+        }    
+    }
 /* -------------------- FOOTER */
+
+.footer {
+    text-align: center;
+    color: gray;
+    background-color: rgb(32, 32, 32);
+    padding: 50px;
+}
 
 /* -------------------- MODULES */
