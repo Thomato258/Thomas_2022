@@ -83,6 +83,14 @@ h5 {
 
 }
 
+@media screen and (min-width: 800px) {
+
+  .main-nav{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 /* gallery */
 
   .first {
@@ -118,7 +126,7 @@ h5 {
   padding-right: 3%;
  } 
   
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 800px) {
     
     .pictures1 {
       
@@ -158,7 +166,7 @@ h5 {
     
       
       
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 800px) {
         
         .pictures2 {
           display: grid;
@@ -201,7 +209,7 @@ h5 {
     
       
       
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 800px) {
         
         .pictures3 {
           display: grid;
@@ -214,7 +222,7 @@ h5 {
     }
 
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 800px) {
         
         .about {
           display: grid;
