@@ -1,8 +1,6 @@
 @import url(normalize.css);
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Oswald&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap');
 
 /* -------------------- VARIABLES */
 
@@ -14,7 +12,8 @@ img {
 
 body{
     background-color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Montserrat', sans-serif;
     color: rgb(32, 32, 32)
 }
 
@@ -36,11 +35,17 @@ h5 {
 .header-image h1{
     color: white;
     position: absolute;
-    top: 28%;
+    top: 0%;
     width: 100%;
     text-align: center;
     font-family: 'Great Vibes', cursive;
     font-size: 800%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
 }
 
 /* -------------------- LAYOUTS */
@@ -50,35 +55,11 @@ h5 {
     max-width:1000px;
     margin-left: auto;
     margin-right: auto;
-}
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
 /* -------------------- NAVIGATION */
-/* navigation bar colour */
-.topnav {
-    background-color: whitesmoke;
-    overflow: hidden;
-  }
-  
-  /* link customisaitons */
-  .topnav a {
-    float: left;
-    color: gray;
-    text-align: center;
-    padding: 16px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  /* Changing color of links on hover */
-  .topnav a:hover {
-    color: rgb(32, 32, 32);
-  }
-  
-  /* colour of the active/current link */
-  .topnav a.active {
-    color: rgb(32, 32, 32);
-  }
 
 /* gallery */
 
@@ -106,16 +87,25 @@ h5 {
   }
 
   
+
+ .pictures1 {
+  display: grid;
+  grid-template-columns:  auto auto ;
+  gap: 50px;
+  padding-left: 3%;
+  padding-right: 3%;
+ } 
   
   @media screen and (min-width: 600px) {
     
     .pictures1 {
-      display: grid;
-      grid-template-columns:  auto auto auto;
+      
+      grid-template-columns:  auto auto auto auto;
       max-width:1000px;
       margin-left: auto;
       margin-right: auto;
-      grid-gap: 50px;
+    
+      
     }
 }
 
@@ -199,6 +189,23 @@ h5 {
           margin-right: auto;
           grid-gap: 50px;
         }    
+    }
+
+
+    @media screen and (min-width: 600px) {
+        
+        .about {
+          display: grid;
+          grid-template-columns:  auto auto;
+          max-width:1000px;
+          margin-left: auto;
+          margin-right: auto;
+          grid-gap: 50px;
+        }    
+
+        .about-text{
+            grid-template-rows: auto auto;
+        }
     }
 /* -------------------- FOOTER */
 
