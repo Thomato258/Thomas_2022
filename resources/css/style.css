@@ -30,6 +30,7 @@ h5 {
 
 .header-image{
     position: relative;
+    padding: 0%;
 }
 
 .header-image h1{
@@ -41,8 +42,8 @@ h5 {
     font-family: 'Great Vibes', cursive;
     font-size: 800%;
 
-    display: flex;
-    justify-content: center;
+    display:flex;
+    justify-content:center;
     align-items: center;
     margin: 0;
     height: 100%;
@@ -51,7 +52,6 @@ h5 {
 /* -------------------- LAYOUTS */
 
 .layout-wide {
-    background-color: white;
     max-width:1000px;
     margin-left: auto;
     margin-right: auto;
@@ -60,6 +60,26 @@ h5 {
   }
 
 /* -------------------- NAVIGATION */
+
+.nav-prompt{
+  cursor: pointer;
+
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  width: 100%;
+  color: grey;
+  border-bottom-width: 2px;
+  border-bottom-style:dashed;
+  border-bottom-color: grey;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.nav-prompt:hover {
+  color: rgb(32, 32, 32)
+}
 
 .navigation {
   background-color: whitesmoke;
@@ -72,6 +92,7 @@ h5 {
 
 .main-nav li {
   text-align: center;
+  padding:16px
 }
 
 .main-nav a {
@@ -80,11 +101,40 @@ h5 {
     font-size: 17px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
+}
+
+/* Changing color of links on hover */
+.main-nav a:hover {
+  color: rgb(32, 32, 32);
+}
+
+/* colour of the active/current link */
+.main-nav a.active {
+  color: rgb(32, 32, 32);
+}
+
+/* MOBILE VIEW ONLY nav button */
+@media screen and (max-width: 800px) {
+
+  .nav-inner {
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .nav-inner.opn{
+    max-height: 100vh;
+  }
 
 }
 
+/* hiding nav button in desktop */
 @media screen and (min-width: 800px) {
-
+  
+  .nav-prompt{
+    display:none;
+  }
   .main-nav{
     display: flex;
     justify-content: space-between;
