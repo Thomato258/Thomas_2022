@@ -26,6 +26,18 @@ h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* -------------------- HEADER */
+.header {
+  padding-top: 16px;
+  text-align: center;
+  color: grey;
+  font-size: 17px;
+}
+
+.header h1{
+  font-family: 'Great Vibes', cursive;
+}
+
 /* header module */
 
 .header-image{
@@ -47,6 +59,14 @@ h5 {
     align-items: center;
     margin: 0;
     height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+
+  .header-image h1{
+    font-size: 300%;
+  }
+
 }
 
 /* -------------------- LAYOUTS */
@@ -289,7 +309,7 @@ h5 {
     text-align: center;
     color: gray;
     background-color: rgb(32, 32, 32);
-    padding: 50px;
+    padding: 20px;
 }
 
 /* -------------------- MODULES */
