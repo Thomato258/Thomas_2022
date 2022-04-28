@@ -1,0 +1,186 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;800&family=PT+Serif&display=swap');
+
+/* -------------------- GLOBAL DEFAULTS */
+*{
+    box-sizing: border-box;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+body {
+    background-color: rgb(255, 240, 234);
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    line-height: 1.5;
+}
+
+a{
+    color:rgb(177, 104, 120);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* -------------------- HEADINGS AND TYPE */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+}
+
+/* -------------------- HEADER */
+.header-heading {
+    margin-top: 50px;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* -------------------- NAVIGATION */
+
+.nav-prompt {
+    border: none;
+    background-color: transparent;
+    position:absolute;
+    top: 75px;
+    right: 5%;
+}
+.main-nav {
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    position: absolute;
+    top: 130px;
+    right: 5%;
+    background-color:rgb(255, 240, 234);
+}
+
+.main-nav a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.main-nav {
+    display: flex;
+    display: none;
+}
+
+.main-nav.open {
+    display: block;
+}
+
+/* -------------------- ABOUT ME */
+body .layout-wide {
+    display: grid
+}
+
+.content-item {
+    display: grid;
+}
+
+.content-inner {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+.text-element {
+    padding-top: 10rem;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .content-item {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* -------------------- PHOTOGRAPHY */
+
+.gallery img {
+    justify-content: space-between;
+    transition: 0.2s;
+    filter:grayscale();
+}
+.gallery a:hover img{
+    transform: scale(0.95);
+    filter: none;
+}
+
+/* -------------------- VISUAL DESIGN */
+
+.gallery2 img {
+    justify-content: space-between;
+    transition: 0.2s;
+    filter:grayscale();
+}
+
+.gallery2 a:hover img{
+    transform: scale(0.95);
+    filter: none;
+}
+
+
+/*--------------------- BRANDING */
+
+.branding-item {
+    display: grid;
+}
+
+.branding-inner {
+    padding-bottom: 4rem;
+}
+
+.image {
+    padding-top: 4rem;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.tmc {
+    padding-left: 8%;
+    padding-right: 8%;  
+}

@@ -11,13 +11,14 @@ img {
 }
 
 body{
-    background-color: white;
+    background-color: whitesmoke;
     font-family: 'Great Vibes', cursive;
     font-family: 'Montserrat', sans-serif;
     color: rgb(32, 32, 32)
 }
 
 /* -------------------- HEADINGS AND TYPE */
+p,
 h1,
 h2,
 h3,
@@ -26,16 +27,47 @@ h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
+@media screen and (max-width: 800px) {
+  p,
+  h2,
+  h3,
+  h4,
+  h5 {
+      font-size:70%;
+  }
+
+}
+
 /* -------------------- HEADER */
 .header {
-  padding-top: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   color: grey;
   font-size: 17px;
+  list-style: none;
+  font-family: 'Great Vibes', cursive;
 }
 
-.header h1{
-  font-family: 'Great Vibes', cursive;
+
+.header a{
+  text-decoration: none;
+  color: gray;
+}
+
+
+@media screen and (min-width: 800px) {
+  header a{
+    font-size: 200%;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  header a{
+    font-size: 140%;
+  }
+
 }
 
 /* header module */
@@ -66,6 +98,7 @@ h5 {
   .header-image h1{
     font-size: 300%;
   }
+
 
 }
 
@@ -98,8 +131,9 @@ h5 {
   padding-bottom: 16px;
 }
 .nav-prompt:hover {
-  color: rgb(32, 32, 32)
+  color: rgb(32, 32, 32);
 }
+
 
 .main-nav {
   list-style: none;
@@ -124,8 +158,12 @@ h5 {
   color: rgb(32, 32, 32);
 }
 
+.main-nav li a.current{
+  color: rgb(32, 32, 32);
+}
+
 /* colour of the active/current link */
-.main-nav a.active {
+.main-nav .active {
   color: rgb(32, 32, 32);
 }
 
@@ -159,156 +197,92 @@ h5 {
 
 /* gallery */
 
-  .first {
-    color: gray;
-  }
-  .first:hover {
-    color: rgb(32, 32, 32);
-  }
-
-
-  .second {
-    color: gray;
-  }
-  .second:hover {
-    color: rgb(32, 32, 32);
-  }
-
-
-  .third {
-    color: gray;
-  }
-  .third:hover {
-    color: rgb(32, 32, 32);
-  }
-
-  
-
- .pictures1 {
-  display: grid;
+.gallery {
+  display:grid;
   grid-template-columns:  auto auto ;
-  gap: 50px;
+  grid-template-rows: auto;
+  gap: 1rem;
   padding-left: 3%;
   padding-right: 3%;
- } 
-  
-  @media screen and (min-width: 800px) {
+
+}
+
+.gallery img {
+  justify-content: space-between;
+  transition: 0.2s;
+  filter:grayscale();
+}
+.gallery a:hover img{
+  transform: scale(0.95);
+  filter: none;
+}
+
+@media screen and (min-width: 800px) {
     
-    .pictures1 {
+  .gallery {
+    
+    grid-template-columns:  auto auto auto;
+    max-width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+  }
+}  
+
+.pictures1 {
+  display:grid;
+  grid-template-columns:  auto auto ;
+  grid-template-rows: auto;
+  gap: 1rem;
+  padding-left: 3%;
+  padding-right: 3%;
+} 
+  
+@media screen and (min-width: 800px) {
+    
+  .pictures1 {
       
-      grid-template-columns:  auto auto auto auto;
+    grid-template-columns:  auto auto auto;
+    max-width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+      
+   }
+}
+      
+.about {
+  display: grid;
+  gap: 2px;
+  padding-left: 3%;
+  padding-right: 3%;
+  grid-gap: 5px;
+}    
+
+
+  @media screen and (min-width: 800px) {
+        
+    .about {
+      display: grid;
+      grid-template-columns:  auto auto;
       max-width:1000px;
       margin-left: auto;
       margin-right: auto;
-    
-      
+      grid-gap: 50px;
+    }    
+
+    .about-text{
+      grid-template-rows: auto auto;
     }
-}
-
-
-
-     .fourth {
-        color: gray;
-      }
-      .fourth:hover {
-        color: rgb(32, 32, 32);
-      }
     
-    
-      .fifth {
-        color: gray;
-      }
-      .fifth:hover {
-        color: rgb(32, 32, 32);
-      }
-    
-    
-      .sixth {
-        color: gray;
-      }
-      .sixth:hover {
-        color: rgb(32, 32, 32);
-      }
-    
-      
-      
-      @media screen and (min-width: 800px) {
-        
-        .pictures2 {
-          display: grid;
-          grid-template-columns:  auto auto auto;
-          max-width:1000px;
-          margin-left: auto;
-          margin-right: auto;
-          grid-gap: 50px;
-        }    
-    }
-
-
-
-
-
-
-
-    .seventh {
-        color: gray;
-      }
-      .seventh:hover {
-        color: rgb(32, 32, 32);
-      }
-    
-    
-      .eighth {
-        color: gray;
-      }
-      .eighth:hover {
-        color: rgb(32, 32, 32);
-      }
-    
-    
-      .nineth {
-        color: gray;
-      }
-      .nineth:hover {
-        color: rgb(32, 32, 32);
-      }
-    
-      
-      
-      @media screen and (min-width: 800px) {
-        
-        .pictures3 {
-          display: grid;
-          grid-template-columns:  auto auto auto;
-          max-width:1000px;
-          margin-left: auto;
-          margin-right: auto;
-          grid-gap: 50px;
-        }    
-    }
-
-
-    @media screen and (min-width: 800px) {
-        
-        .about {
-          display: grid;
-          grid-template-columns:  auto auto;
-          max-width:1000px;
-          margin-left: auto;
-          margin-right: auto;
-          grid-gap: 50px;
-        }    
-
-        .about-text{
-            grid-template-rows: auto auto;
-        }
-    }
+  }
 /* -------------------- FOOTER */
 
 .footer {
     text-align: center;
     color: gray;
-    background-color: rgb(32, 32, 32);
+    
     padding: 20px;
 }
 
